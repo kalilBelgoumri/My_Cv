@@ -1,7 +1,21 @@
-import "./App.css";
+// eslint-disable-next-line import/no-unresolved
+import { Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
-  return <div className="App"> </div>;
+  return (
+    <div>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </main>
+    </div>
+  );
 }
 
 export default App;
