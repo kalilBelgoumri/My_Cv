@@ -1,17 +1,29 @@
-import { Switch } from "@mui/material";
-import { Route } from "react-router-dom";
+import { Link } from "@mui/material";
 
 function Navbar() {
   return (
     <div>
       <nav>
-        <ul>
+        <ul className="">
           <li>
-            <Switch>
-              <Route exact to="/">
-                Acceuil
-              </Route>
-            </Switch>
+            <Link exact to="/">
+              Acceuil
+            </Link>
+          </li>
+          <li>
+            <Link exact to="/experiences">
+              Experiences
+            </Link>
+          </li>
+          <li>
+            <Link exact to="/competencs">
+              Competences
+            </Link>
+          </li>
+          <li>
+            <Link exact to="/portofolio">
+              Portofolio
+            </Link>
           </li>
         </ul>
       </nav>
