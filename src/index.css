@@ -3,3 +3,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+header {
+    background-color: #2A2A2A;
+    height: 150px;
+}
+
+main {
+    background-color: black;
+    height: 500px;
+}
+
+article {
+    background-color: #2A2A2A;
+    height: 200px;
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+}
