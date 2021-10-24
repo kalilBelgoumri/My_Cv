@@ -1,29 +1,29 @@
-import { Link } from "@mui/material";
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div>
       <nav>
-        <ul className="">
+        <ul className="flex flex-1">
           <li>
-            <Link exact to="/">
+            <NavLink exact to="/">
               Acceuil
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link exact to="/experiences">
+            <NavLink exact to="/experiences">
               Experiences
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link exact to="/competencs">
+            <NavLink exact to="/competencs">
               Competences
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link exact to="/portofolio">
+            <NavLink exact to="/portofolio">
               Portofolio
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
