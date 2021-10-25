@@ -7,8 +7,8 @@ import img from './assets/Logo.png'
 function App() {
   return (
     <div>
-      <header className="flex">
-        <img className="align-center h-20" src={img} alt="Logo" />
+      <header>
+        <img className="h-1/3" src={img} alt="Logo" />
         <Navbar />
       </header>
       <main>
