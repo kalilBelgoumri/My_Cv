@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import img from  '../assets/Hamburger.png'
+import img from  '../assets/hambuger.png'
 
 const Navbar = () => {
   return (
@@ -8,8 +8,8 @@ const Navbar = () => {
       <div>
         <nav>
         <div className="md:hidden hamburger__menu cursor-pointer flex">
-          <div className="hamburger__fl flex absolute justify-center items-center">
-            <img src={img} alt="Hamburger" />
+          <div className="flex">
+            <img className="flex" src={img} alt="Hamburger" />
             </div>
           </div>
           <ul className=" text-white md:block flex hidden">
