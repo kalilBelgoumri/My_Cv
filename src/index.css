@@ -3,55 +3,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-header {
-    background-color: #2A2A2A;
-    height: 120px;
-}
 
-main {
+/* header {
+    background-color: #2A2A2A;
+} */
+
+
+/* main {
     background-color: black;
     height: 500px;
-}
+} */
 
-article {
+
+/* article {
     background-color: #2A2A2A;
     height: 200px;
-}
+} */
 
-footer {
+
+/* footer {
     background-color: black;
     height: 300px;
-}
+} */
 
-.hamburger {
-    width: 48.01px;
-    height: 0px;
-    left: 320px;
-    top: 32.49px;
-    border: 1px solid #FFFFFF;
-}
 
-.hamburger1 {
-    width: 38.01px;
-    height: 0px;
-    margin-left: 320px;
-    top: 44px;
-    border: 1px solid #FFFFFF;
-}
-
-.hamburger2 {
-    width: 32px;
-    height: 0px;
-    left: 320px;
-    top: 56px;
-    border: 1px solid #FFFFFF;
-}
-
-ul {
+/* ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 li {
     padding: 5px;

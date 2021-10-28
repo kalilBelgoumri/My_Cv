@@ -1,18 +1,18 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import img from  '../assets/hambuger.png'
+import img from '../assets/Logo.png'
+
+// import img from  '../assets/hambuger.png'
 
 const Navbar = () => {
   return (
     <>
       <div>
+        <div className="logo__Nav absolute left-0 -mt-3 mx-6">
+          <img className="h-1/2" src={img} alt="Logo" />
+        </div>
         <nav>
-        <div className="md:hidden hamburger__menu cursor-pointer flex">
-          <div className="flex">
-            <img className="flex" src={img} alt="Hamburger" />
-            </div>
-          </div>
-          <ul className=" text-white md:block flex hidden">
+          <ul className=" text-white flex justify-evenly items-center hidden md:flex">
             <li>
               <NavLink exact to="/">
                 Acceuil
