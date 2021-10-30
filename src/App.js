@@ -5,7 +5,7 @@ import MobileNavigation from './components/MobileNavigation';
 import Navigation from './components/Navigation';
 import img from './assets/Logo.png';
 import { BiMenuAltLeft, BiWindowClose } from 'react-icons/bi';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub, BsKanbanFill } from 'react-icons/bs';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { useState } from 'react';
 
@@ -56,7 +56,6 @@ const App = () => {
         <div className="icon__social hidden md:flex items-center absolute my-20 -mx-28 left-0 transform -rotate-90">
         <div className="social"> 
           <h1 className="text-white font-bold text-3xl mx-5 "> SOCIAL </h1>
-          
         </div>
           <div className="GitHub__social px-5 cursor-pointer">
           <BsGithub size="40px" color="white" />
@@ -65,6 +64,9 @@ const App = () => {
             <TiSocialLinkedinCircular size="55px" color="white" />
           </div>
         </div>
+        <div className="button__Contact text-white font-bold invisible md:visible border-4 border-purple-500 absolute px-12 py-2 rounded-md cursor-pointer animate-bounce ml-96">
+              <a href="mailto:kalil.belgoumri@gmail.com">Contact</a>
+          </div>
       </main>
       <footer className="bg-secondary h-24 min-h-96 w-full"></footer>
     </div>
