@@ -25,3 +25,7 @@ header {
 footer {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
+
+.ui img {
+    border-radius: 5%;
+}
