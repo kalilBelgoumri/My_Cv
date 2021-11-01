@@ -54,19 +54,23 @@ const App = () => {
         <div className="aboutUs bg-gray-800 pattern flex justify-center items-center">
           <AboutUs />
         </div>
+        <div className="card__portofolio flex items-center flex-row justify-center space-x-6 py-6">
+        <div className="portofolio my-40 space-x-4">
+          <Cardportofolio
+            image={retrowild}
+            site="https://retrowild.netlify.app/"
+            height={100}
+            width={100}
+          />
+        </div>
         <div className="portofolio flex items-center justify-center my-40 space-x-4">
           <Cardportofolio
             image={retrowild}
             site="https://retrowild.netlify.app/"
+            height={100}
+            width={100}
           />
-          <Cardportofolio
-            image="https://picsum.photos/500/300?random=2"
-            site={'www.google.fr'}
-          />
-          <Cardportofolio
-            image="https://picsum.photos/500/300?random=3"
-            site={'www.google.fr'}
-          />
+        </div>
         </div>
       </main>
       <footer>
