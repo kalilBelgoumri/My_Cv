@@ -10,11 +10,6 @@ function NavLinks() {
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="/experiences">
-          Experiences
-        </NavLink>
-      </li>
-      <li>
         <NavLink exact to="/competencs">
           Competences
         </NavLink>

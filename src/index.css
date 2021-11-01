@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 footer {
     background-color: black;
     height: 300px;
@@ -10,20 +10,22 @@ li {
     padding: 5px;
 }
 
-.hamburger__open {
-    transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s !important
-}
-
 main {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: #F7F8F8;
 }
 
 header {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: #1F2937;
+    ;
 }
 
 footer {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: #1F2937;
+    ;
+}
+
+.aboutUs {
+    background-image: url(./assets/circuit.svg)
 }
 
 .ui img {

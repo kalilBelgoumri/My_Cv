@@ -6,10 +6,12 @@ import Navigation from './components/Navigation';
 import img from './assets/Logo.png';
 import { BiMenuAltLeft, BiMessageRounded, BiWindowClose } from 'react-icons/bi';
 import { useState } from 'react';
-import { Container } from 'semantic-ui-react';
 import AboutUs from './components/AboutUs';
-import Portofolio from './components/Portofolio';
 import Contact from './components/Contact';
+import Competences from './components/Competences';
+import Footer from './components/Footer';
+import Cardportofolio from './components/CardPortofolio';
+import retrowild from './assets/retroWild.png';
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +20,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
-      <header className="h-32 flex items-center justify-end">
+      <header className="h-42 flex items-end justify-end  w-full p-6">
         <div className="humburer__Menu transition ease-in-out duration-1000 visible md:hidden absolute flex right-0 cursor-pointer mx-3 pl-3 ">
           {open ? (
             <BiWindowClose
@@ -46,13 +48,29 @@ const App = () => {
           {open && <MobileNavigation />}
         </div>
       </header>
-      <main className="w-full flex flex-col">
+      <main className="w-full flex flex-col justify-center items-center">
         <Contact />
-        <AboutUs />
-        <Portofolio />
+        <Competences />
+        <div className="aboutUs bg-gray-800 pattern flex justify-center items-center">
+          <AboutUs />
+        </div>
+        <div className="portofolio flex items-center justify-center my-40 space-x-4">
+          <Cardportofolio
+            image={retrowild}
+            site="https://retrowild.netlify.app/"
+          />
+          <Cardportofolio
+            image="https://picsum.photos/500/300?random=2"
+            site={'www.google.fr'}
+          />
+          <Cardportofolio
+            image="https://picsum.photos/500/300?random=3"
+            site={'www.google.fr'}
+          />
+        </div>
       </main>
-      <footer className="bg-white font-bold h-32 min-h-96 w-full flex justify-center items-center">
-        <p className="text-red-800">Copyright Kalil2021</p>
+      <footer>
+        <Footer />
       </footer>
     </div>
   );
