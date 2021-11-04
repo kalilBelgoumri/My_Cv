@@ -9,7 +9,6 @@ import { useState } from 'react'
 import AboutUs from './components/AboutUs'
 import Contact from './components/Contact'
 import Competences from './components/Competences'
-// import Footer from './components/Footer';
 import Cardportofolio from './components/CardPortofolio'
 import retrowild from './assets/retroWild.png'
 
@@ -52,7 +51,7 @@ const App = () => {
       {/* ** Contact ** */}
       <main className=" flex flex-col justify-center items-center bg-white">
         <div className="contact mb-52">
-        <Contact />
+          <Contact />
         </div>
         {/* ** Competences ** */}
         <div className="competences my-52">
@@ -60,9 +59,9 @@ const App = () => {
         </div>
         {/* ** AboutUs ** */}
         <div className="about px-24 w-full">
-        <div className="aboutUs bg-gray-800 pattern flex justify-center items-center rounded-lg shadow-2xl px-24">
-          <AboutUs />
-        </div>
+          <div className="aboutUs bg-gray-800 pattern flex justify-center items-center rounded-lg shadow-2xl px-24">
+            <AboutUs />
+          </div>
         </div>
         {/* ** Portofolio ** */}
         <h1 className="text-6xl font-extrabold text-center my-20">
