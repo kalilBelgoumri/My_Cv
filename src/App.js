@@ -18,7 +18,8 @@ const App = () => {
   const [open, setOpen] = useState(false)
   const controlNavbar = () => {
     {
-      window.scrollY > 100 ? setshow(false) : setshow(!false)
+      window.scrollY < 300 ? setshow(true) : setshow(false)
+  
     }
   }
 
