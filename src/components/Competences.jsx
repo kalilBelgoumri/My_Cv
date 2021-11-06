@@ -37,14 +37,14 @@ function Competences() {
               <AiFillHtml5 size="30px" color="black" />
               <DiCss3 size="30px" color="black" />
             </div>
-            <div class="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+            <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
               <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                 Javascript,HTML5/CSS3,SCSS,SASS
               </div>
             </div>
           </li>
           <li>
-            <div class=" w-screen pt-3">
+            <div className=" w-screen pt-3">
               <div className="icon flex items-center justify-around px-14  my-2">
                 <FaReact size="30px" color="black" />
                 <FaNodeJs size="30px" color="black" />
@@ -56,7 +56,7 @@ function Competences() {
                 <FaDocker size="30px" color="black" />
                 <SiPostman size="30px" color="black" />
               </div>
-              <div class=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 overflow-hidden font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   React,Node.JS,Bootstrap,Tailwind,Mui,Semantic,Express,Git,
                   Docker,Postman
@@ -65,13 +65,13 @@ function Competences() {
             </div>
           </li>
           <li className="px-5">
-            <div class=" w-full mt-2">
+            <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
                 <DiVisualstudio size="30px" color="black" />
                 <SiAtom size="30px" color="black" />
                 <SiSublimetext size="30px" color="black" />
               </div>
-              <div class=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   Visual studio code,Atom,Sublime Text
                 </div>
@@ -79,13 +79,13 @@ function Competences() {
             </div>
           </li>
           <li className="p-5">
-            <div class=" w-full mt-2">
+            <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
                 <DiScrum size="30px" color="black" />
                 <CgIfDesign size="30px" color="black" />
                 <SiSpeedtest size="30px" color="black" />
               </div>
-              <div class=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   Agile, Scrum, Design Patterns,Revues de code, Tests unitaires
                 </div>
@@ -93,13 +93,13 @@ function Competences() {
             </div>
           </li>
           <li className="p-5">
-            <div class=" w-full mt-2">
+            <div className=" w-full mt-2">
               <div className="icon flex items-center justify-evenly my-2">
                 <BsSlack size="30px" color="black" />
                 <FaDiscord size="30px" color="black" />
                 <FiTrello size="30px" color="black" />
               </div>
-              <div class=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   Zenhub, Slack, Discord,Trello
                 </div>
@@ -107,11 +107,11 @@ function Competences() {
             </div>
           </li>
           <li className="p-5">
-            <div class=" w-full mt-2">
+            <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
                 <FiFigma size="30px" color="black" />
               </div>
-              <div class="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+              <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   Figma
                 </div>

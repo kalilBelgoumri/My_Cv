@@ -14,14 +14,10 @@ import cv from './documents/Belgoumri_kalil_cv.pdf'
 import { Divide as Hamburger } from 'hamburger-react'
 
 const App = () => {
+  const bonjour = "Bonjour les Amis Dev__00 mon site a été fait par moi même avec React Semantic et Tailwind merci de respecter mon travail :)"
   const [show, setshow] = useState(true)
   const [open, setOpen] = useState(false)
-  const controlNavbar = () => {
-    {
-      window.scrollY < 300 ? setshow(true) : setshow(false)
-  
-    }
-  }
+  const controlNavbar = () => {window.scrollY < 300 ? setshow(true) : setshow(false)}
 
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
@@ -29,7 +25,7 @@ const App = () => {
       window.removeEventListener('scroll', controlNavbar)
     }
   }, [])
-
+  console.log(bonjour)
   return (
     <div className="flex flex-col">
       <header
