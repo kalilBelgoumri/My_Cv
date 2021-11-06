@@ -72,7 +72,7 @@ function Competences() {
                 <SiSublimetext size="30px" color="black" />
               </div>
               <div class=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5  animate-pulse rounded-md text-center text-white">
+                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
                   Visual studio code,Atom,Sublime Text
                 </div>
               </div>

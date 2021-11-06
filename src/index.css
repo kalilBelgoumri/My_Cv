@@ -9,16 +9,16 @@ main {
     background-color: #F7F8F8;
 }
 
-header {
-    background-color: #1F2937;
-    ;
+.header {
+    transition: ease-in-out;
+    transition-duration: 1s;
 }
 
-
-/* 
-footer {
+.header__prop {
     background-color: #1F2937;
-} */
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
 
 .aboutUs {
     background-image: url(./assets/circuit.svg)
