@@ -20,6 +20,11 @@ main {
     transition-duration: 0.5s;
 }
 
+.mobileNavigatio {
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
 .aboutUs {
     background-image: url(./assets/circuit.svg)
 }

@@ -48,13 +48,13 @@ const App = () => {
         <div className="hamurgerOpen hidden sm:flex items-center justify-end cursor-pointer">
           <Navigation />
         </div>
-        <div className="mobileNavigatio flex justify-center items-center pr-12 sm:hidden ">
+        <div className="mobileNavigatio transition flex justify-center items-center pr-12 sm:hidden ">
           {open && <MobileNavigation />}
         </div>
       </header>
       {/* ** Contact ** */}
       <main className=" flex flex-col justify-center items-center bg-white">
-        <div className="contact mb-52">
+        <div className="contact mb-56">
           <Contact />
         </div>
         {/* ** CV ** */}

@@ -5,7 +5,7 @@ import { TiSocialLinkedinCircular } from 'react-icons/ti'
 function Contact() {
   return (
     <div>
-      <div className="username__Dev flex justify-center items-center -ml-60 my-16 ">
+      <div className="username__Dev flex justify-center items-center -ml-60 my-44 ">
         <div className="userName lg:flex items-center justify-center text-black text-5xl font-bold xl:text-6xl  hidden md:">
           <h5>BELGOUMRI KALIL </h5>
           <span className="w-36 h-2 bg-black ml-6"></span>
