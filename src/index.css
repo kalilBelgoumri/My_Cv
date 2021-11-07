@@ -15,7 +15,7 @@ main {
 }
 
 .header__prop {
-    background-color: #1F2937;
+    /* background-color: #1F2937; */
     transition: ease-in-out;
     transition-duration: 0.5s;
 }

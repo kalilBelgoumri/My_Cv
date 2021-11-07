@@ -21,6 +21,7 @@ import { CgIfDesign } from 'react-icons/cg'
 import { BsSlack } from 'react-icons/bs'
 import { FiTrello, FiFigma } from 'react-icons/fi'
 
+
 function Competences() {
   return (
     <>

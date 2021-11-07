@@ -4,13 +4,13 @@ import { NavLink } from 'react-router-dom';
 function NavLinks() {
   return (
     <ul className=" text-white flex mr-5">
-      <li>
+      {/* <li>
         <NavLink exact to="/">
           Acceuil
         </NavLink>
-      </li>
-      <li>
-        <NavLink exact to="/competencs">
+      </li> */}
+      {/* <li>
+        <NavLink exact to="/competences">
           Competences
         </NavLink>
       </li>
@@ -18,7 +18,7 @@ function NavLinks() {
         <NavLink exact to="/portofolio">
           Portofolio
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 }
