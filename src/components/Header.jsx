@@ -21,7 +21,6 @@ function Header() {
   return (
     <div className="flex flex-col">
       <div className="backgound flex flex-col"></div>
-
       <header
         className={`flex w-full fixed h-32 items-center justify-end header transition 
     ${show && 'header__prop'}`}
@@ -33,8 +32,8 @@ function Header() {
         <div className="logo__Nav absolute left-0 -mt-3 mx-6">
           <img className="h-1/2" src={img} alt="Logo" />
         </div>
-        <div className={`"hamurgerOpen hidden sm:flex items-center justify-end cursor-pointer"
-        ${show && 'hamurgerOpen'}`}
+        <div className={`"hamburgerOpen hidden sm:flex items-center justify-end cursor-pointer"
+        ${show && 'hamburgerOpen'}`}
         >
           <Navigation />
           
