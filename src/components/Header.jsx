@@ -22,7 +22,7 @@ function Header() {
     <div className="flex flex-col">
       <div className="backgound flex flex-col"></div>
       <header
-        className={`flex w-full fixed h-32 items-center justify-end header transition 
+        className={`flex w-full h-32 items-center justify-end header transition bg-gradient-to-b from-gray-700 via-gray-900 to-black 
     ${show && 'header__prop'}`}
       >
         {/* ** Navbar Burger Menu ** */}
@@ -36,7 +36,6 @@ function Header() {
         ${show && 'hamburgerOpen'}`}
         >
           <Navigation />
-          
         </div>
         <div className="mobileNavigatio transition flex justify-center items-center pr-12 sm:hidden ">
           {open && <MobileNavigation />}

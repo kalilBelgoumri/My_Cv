@@ -21,22 +21,22 @@ import { CgIfDesign } from 'react-icons/cg'
 import { BsSlack } from 'react-icons/bs'
 import { FiTrello, FiFigma } from 'react-icons/fi'
 
-
 function Competences() {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <h1 className="text-black text-center font-bold text-xl mt-60 sm:text-2xl md:text-4xl lg:text-6xl">
+      <div className="flex items-center justify-center mt-20 -mb-20">
+        <h1 className="text-white text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
           COMPÉTENCES ET TECHNIQUES
         </h1>
       </div>
-      <div className=" text-black my-32 ">
+      <div className=" text-white my-32 ">
         <ul className="flex flex-col items-center justify-center">
+          <span className="flex w-72 h-px bg-white sm:w-96"></span>
           <li>
             <div className="icon flex items-center justify-around mt-12">
-              <DiJavascript1 size="30px" color="black" />
-              <AiFillHtml5 size="30px" color="black" />
-              <DiCss3 size="30px" color="black" />
+              <DiJavascript1 size="30px" color="white" />
+              <AiFillHtml5 size="30px" color="white" />
+              <DiCss3 size="30px" color="white" />
             </div>
             <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
               <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
@@ -47,20 +47,15 @@ function Competences() {
           <li>
             <div className=" w-screen pt-3">
               <div className="icon flex items-center justify-around px-14  my-2">
-                <FaReact size="30px" color="black" />
-                <FaNodeJs size="30px" color="black" />
-                <FaBootstrap size="30px" color="black" />
-                <SiTailwindcss size="30px" color="black" />
-                <SiMaterialui size="30px" color="black" />
-                <SiSemanticuireact size="30px" color="black" />
-                <AiFillGithub size="30px" color="black" />
-                <FaDocker size="30px" color="black" />
-                <SiPostman size="30px" color="black" />
+                <FaBootstrap size="30px" color="white" />
+                <SiTailwindcss size="30px" color="white" />
+                <SiMaterialui size="30px" color="white" />
+                <SiSemanticuireact size="30px" color="white" />
+                <AiFillGithub size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 overflow-hidden font-bold text-md leading-none py-5 rounded-md text-center text-white">
-                  React,Node.JS,Bootstrap,Tailwind,Mui,Semantic,Express,Git,
-                  Docker,Postman
+                  Bootstrap,Tailwind,Mui,Semantic,Git
                 </div>
               </div>
             </div>
@@ -68,9 +63,35 @@ function Competences() {
           <li className="px-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <DiVisualstudio size="30px" color="black" />
-                <SiAtom size="30px" color="black" />
-                <SiSublimetext size="30px" color="black" />
+                <FaReact size="30px" color="white" />
+                <FaNodeJs size="30px" color="white" />
+              </div>
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                  React,Node.JS
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="px-5">
+            <div className=" w-full mt-2">
+              <div className="icon flex items-center justify-around my-2">
+                <FaDocker size="30px" color="white" />
+                <SiPostman size="30px" color="white" />
+              </div>
+              <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
+                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                  Docker,Postman,Express
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="px-5">
+            <div className=" w-full mt-2">
+              <div className="icon flex items-center justify-around my-2">
+                <DiVisualstudio size="30px" color="white" />
+                <SiAtom size="30px" color="white" />
+                <SiSublimetext size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
@@ -82,9 +103,9 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <DiScrum size="30px" color="black" />
-                <CgIfDesign size="30px" color="black" />
-                <SiSpeedtest size="30px" color="black" />
+                <DiScrum size="30px" color="white" />
+                <CgIfDesign size="30px" color="white" />
+                <SiSpeedtest size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
@@ -96,9 +117,9 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-evenly my-2">
-                <BsSlack size="30px" color="black" />
-                <FaDiscord size="30px" color="black" />
-                <FiTrello size="30px" color="black" />
+                <BsSlack size="30px" color="white" />
+                <FaDiscord size="30px" color="white" />
+                <FiTrello size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
@@ -110,7 +131,7 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <FiFigma size="30px" color="black" />
+                <FiFigma size="30px" color="white" />
               </div>
               <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
                 <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
@@ -119,6 +140,9 @@ function Competences() {
               </div>
             </div>
           </li>
+          <div className="ligne mt-10">
+            <span className="flex w-72 h-px bg-white sm:w-96"></span>
+          </div>
         </ul>
       </div>
     </>

@@ -8,8 +8,8 @@ import Background from '../components/Background'
 function Portofolio() {
   return (
     <div>
-      <section className="">
-        <div className="header__content flex flex-col">
+      <section className="border-b-2 border-red-500">
+        <div className="header__content flex flex-col border-b-2 border-red-500 ">
           <Header />
         </div>
         <div className="">

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
-// import Competences from './pages/Competences'
-// import Portofolio from './pages/Portofolio'
+import Competences from './pages/Competences'
+import Portofolio from './pages/Portofolio'
 import React from 'react'
 import { AnimatePresence } from 'framer-motion'
 
@@ -10,11 +10,11 @@ const App = () => {
     <Router>
       <AnimatePresence>
         <Switch>
-          <Route path="/" exact component={Home} />{' '}
-          {/* <Route path="/competences" component={Competences} />
-                    <Route path="/portofolio" component={Portofolio} /> */}{' '}
-        </Switch>{' '}
-      </AnimatePresence>{' '}
+          <Route path="/" exact component={Home} />
+           <Route path="/competences" component={Competences} />
+                    <Route path="/portofolio" component={Portofolio} />
+        </Switch>
+      </AnimatePresence>
     </Router>
   )
 }
