@@ -4,10 +4,9 @@ import Header from '../components/Header'
 import image from '../assets/portfolio.jpg'
 import Background from '../components/Background'
 
-
-function Portofolio() {
+const pageProjets = () => {
   return (
-    <div>
+    <div id="projets">
       <section className="border-b-2 border-red-500">
         <div className="header__content flex flex-col border-b-2 border-red-500 ">
           <Header />
@@ -53,4 +52,4 @@ function Portofolio() {
   )
 }
 
-export default Portofolio
+export default pageProjets

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, Grid, Image, Segment } from 'semantic-ui-react'
+import { Divider, Grid, Segment } from 'semantic-ui-react'
 import { DiJavascript1, DiCss3, DiVisualstudio, DiScrum } from 'react-icons/di'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
 import {
@@ -21,7 +21,7 @@ import {
 import { CgIfDesign } from 'react-icons/cg'
 import { BsSlack } from 'react-icons/bs'
 import { FiTrello, FiFigma } from 'react-icons/fi'
-const Portofolio = () => (
+const Projets = () => (
   <Segment>
     <Grid columns={2} relaxed="very">
       <Grid.Column>
@@ -98,4 +98,4 @@ const Portofolio = () => (
   </Segment>
 )
 
-export default Portofolio
+export default Projets

@@ -24,7 +24,7 @@ import { FiTrello, FiFigma } from 'react-icons/fi'
 function Competences() {
   return (
     <>
-      <div className="flex items-center justify-center mt-20 -mb-20">
+      <div className="flex items-center justify-center mt-20 -mb-20"id="Competences">
         <h1 className="text-white text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
           COMPÉTENCES ET TECHNIQUES
         </h1>
