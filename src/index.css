@@ -1,13 +1,13 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 li {
     padding: 5px;
 }
 
 main {
-    background-color: #F7F8F8;
+    background-color: #f7f8f8;
 }
 
 .header {
@@ -27,7 +27,7 @@ main {
 }
 
 .aboutUs {
-    background-image: url(./assets/circuit.svg)
+    background-image: url(./assets/circuit.svg);
 }
 
 .ui img {
@@ -35,5 +35,13 @@ main {
 }
 
 .hamburger__close {
-    transition: all .2s;
+    transition: all 0.2s;
+}
+
+#passion {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#apropos {
+    font-family: 'Roboto', sans-serif;
 }

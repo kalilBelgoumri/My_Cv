@@ -8,7 +8,7 @@ import SpacePark from '../assets/SpacePark.png'
 import cv from '../documents/Belgoumri_kalil_cv.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import aboutImg from '../assets/about.png'
+import aboutImg from '../assets/about1.png'
 // import image from '../assets/entrepeneur.jpg'
 // import Background from '../components/Background'
 import { motion } from 'framer-motion'
@@ -77,19 +77,19 @@ const Home = () => {
             </div>
           </div>
           {/* ** AboutUs ** */}
-          <div className="about -mt-20 mb-10 flex flex-col lg:grid grid-flow-col px-20">
-            <div className="font-semibold my-52 flex flex-col items-center md:items-start justify-center">
-              <span className="text-white font-display flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl">
+          <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">
+            <div className="font-semibold my-52 flex flex-col items-center lg:justify-center">
+              <span className="text-white flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl"id="apropos">
                 À PROPOS DE MOI
               </span>
-              <span className="text-gray-400 w-3/6 flex text-center mt-20 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+              <span className=" text-white text-justify font-bold flex mt-20 text-xl sm:text-2xl md:text-3xl lg:text-3xl w-5/6 lg:text-justify tracking-tighter xl:text-3xl"id="passion">
                 Passionné des nouvelles technologies et du code, je suis
                 actuellement ouvert aux opportunités en Stage ou en Alternance
                 en tant que développeur Front-End ou Full Stack Javascript, pour
                 toute proposition, veuillez me contacter.
               </span>
             </div>
-            <div className="background flex items-center justify-center md:justify-end">
+            <div className="background -mt-36 flex items-center justify-center lg:justify-end">
               <img src={aboutImg} alt="AboutImg" />
             </div>
           </div>

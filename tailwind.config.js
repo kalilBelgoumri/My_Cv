@@ -10,15 +10,15 @@ module.exports = {
       secondary: '#2A2A2A',
     }),
   },
-  fontFamily: {
-    sans: ['ui-sans-serif', 'system-ui'],
-    serif: ['ui-serif', 'Georgia'],
-    mono: ['ui-monospace', 'SFMono-Regular'],
-    LeckerliOne: ['Leckerli One', 'cursive'],
-    body: ['"Open Sans"'],
+  extend: {
+    fontFamily: {
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      LeckerliOne: ['Leckerli One', 'cursive'],
+      body: ['"Open Sans"'],
+    },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [require('@tailwindcss/aspect-ratio')],
 }
