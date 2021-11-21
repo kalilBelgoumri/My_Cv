@@ -1,4 +1,5 @@
 import React from 'react'
+import { Divider } from '@material-ui/core'
 import { DiJavascript1, DiCss3, DiVisualstudio, DiScrum } from 'react-icons/di'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
 import {
@@ -24,8 +25,11 @@ import { FiTrello, FiFigma } from 'react-icons/fi'
 function Competences() {
   return (
     <>
-      <div className="flex items-center justify-center mt-20 -mb-20"id="Competences">
-        <h1 className="text-white text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
+      <div
+        className="flex items-center justify-center mt-20 -mb-20"
+        id="Competences"
+      >
+        <h1 className="text-white FONT text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           COMPÉTENCES ET TECHNIQUES
         </h1>
       </div>
@@ -141,7 +145,10 @@ function Competences() {
             </div>
           </li>
           <div className="ligne mt-10">
-            <span className="flex w-72 h-px bg-white sm:w-96"></span>
+            {/* <span className="flex w-72 h-px bg-white sm:w-96"></span> */}
+            <Divider style={{ width: '200%', backgroundColor: 'white' }} />
+
+            {/* <Divider style={{ background: 'white' }} variant="middle" /> */}
           </div>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from '../components/AboutUs'
+// import AboutUs from '../components/AboutUs'
 import Contact from '../components/Contact'
 import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
@@ -8,6 +8,7 @@ import SpacePark from '../assets/SpacePark.png'
 import cv from '../documents/Belgoumri_kalil_cv.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import aboutImg from '../assets/about.png'
 // import image from '../assets/entrepeneur.jpg'
 // import Background from '../components/Background'
 import { motion } from 'framer-motion'
@@ -43,12 +44,7 @@ const Home = () => {
           <div className="competences pb-0" id="competences">
             <Competences />
           </div>
-          {/* ** AboutUs ** */}
-          <div className="about px-6 w-full flex justify-center items-center">
-            <div className="aboutUs bg-gray-800 pattern flex justify-center items-center rounded-lg shadow-2xl h-80">
-              <AboutUs />
-            </div>
-          </div>
+
           {/* ** Portofolio ** */}
           <h1
             className="text-white text-4xl md:text-6xl font-extrabold text-center mt-16"
@@ -78,6 +74,23 @@ const Home = () => {
                 image={retrowild}
                 site="https://space-park.netlify.app/"
               />
+            </div>
+          </div>
+          {/* ** AboutUs ** */}
+          <div className="about -mt-20 mb-10 flex flex-col lg:grid grid-flow-col px-20">
+            <div className="font-semibold my-52 flex flex-col items-center md:items-start justify-center">
+              <span className="text-white font-display flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl">
+                À PROPOS DE MOI
+              </span>
+              <span className="text-gray-400 w-3/6 flex text-center mt-20 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl">
+                Passionné des nouvelles technologies et du code, je suis
+                actuellement ouvert aux opportunités en Stage ou en Alternance
+                en tant que développeur Front-End ou Full Stack Javascript, pour
+                toute proposition, veuillez me contacter.
+              </span>
+            </div>
+            <div className="background flex items-center justify-center md:justify-end">
+              <img src={aboutImg} alt="AboutImg" />
             </div>
           </div>
         </main>
