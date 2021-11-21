@@ -1,5 +1,4 @@
 import React from 'react'
-// import AboutUs from '../components/AboutUs'
 import Contact from '../components/Contact'
 import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
@@ -8,9 +7,7 @@ import SpacePark from '../assets/SpacePark.png'
 import cv from '../documents/Belgoumri_kalil_cv.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import aboutImg from '../assets/about1.png'
-// import image from '../assets/entrepeneur.jpg'
-// import Background from '../components/Background'
+import aboutImg from '../assets/about.png'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -79,10 +76,16 @@ const Home = () => {
           {/* ** AboutUs ** */}
           <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">
             <div className="font-semibold my-52 flex flex-col items-center lg:justify-center">
-              <span className="text-white flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl"id="apropos">
+              <span
+                className="text-white flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl"
+                id="apropos"
+              >
                 À PROPOS DE MOI
               </span>
-              <span className=" text-white text-justify font-bold flex mt-20 text-xl sm:text-2xl md:text-3xl lg:text-3xl w-5/6 lg:text-justify tracking-tighter xl:text-3xl"id="passion">
+              <span
+                className=" text-white text-justify font-bold flex mt-20 text-xl sm:text-2xl md:text-3xl lg:text-3xl w-5/6 lg:text-justify tracking-tighter xl:text-3xl"
+                id="passion"
+              >
                 Passionné des nouvelles technologies et du code, je suis
                 actuellement ouvert aux opportunités en Stage ou en Alternance
                 en tant que développeur Front-End ou Full Stack Javascript, pour
