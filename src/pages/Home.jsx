@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import aboutImg from '../assets/about.png'
 import { motion } from 'framer-motion'
 
+
 const Home = () => {
   const bonjour =
     'Bonjour les Amis Dev__00 mon site a été fait par moi même avec React Semantic et Tailwind merci de respecter mon travail :)'
@@ -44,7 +45,7 @@ const Home = () => {
 
           {/* ** Portofolio ** */}
           <h1
-            className="text-white text-4xl md:text-6xl font-extrabold text-center mt-16"
+            className="text-white text-4xl md:text-6xl font-extrabold text-center -mt-20"
             id="portfolio"
           >
             MES PROJETS
@@ -72,7 +73,10 @@ const Home = () => {
                 site="https://space-park.netlify.app/"
               />
             </div>
-          </div>
+              
+            </div>
+     
+
           {/* ** AboutUs ** */}
           <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">
             <div className="font-semibold my-52 flex flex-col items-center lg:justify-center">

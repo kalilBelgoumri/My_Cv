@@ -45,3 +45,13 @@ main {
 #apropos {
     font-family: 'Leckerli One', cursive;
 }
+
+#hr {
+    min-width: 100%;
+}
+
+@media only screen and (min-width: 1135px) {
+    #ligne {
+        width: 100px;
+    }
+}
