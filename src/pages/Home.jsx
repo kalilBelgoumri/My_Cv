@@ -19,7 +19,7 @@ const Home = () => {
 
   console.log(bonjour)
   return (
-    <div className="home" id="Home">
+    <div className="home overflow-visible" id="Home">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
