@@ -10,6 +10,7 @@ import {
   FaDocker,
 } from 'react-icons/fa'
 import {
+  SiNextdotjs,
   SiTailwindcss,
   SiSpeedtest,
   SiMaterialui,
@@ -43,8 +44,8 @@ function Competences() {
               <DiCss3 size="30px" color="white" />
             </div>
             <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-              <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
-                Javascript,HTML5/CSS3,SCSS,SASS
+              <div className="bg-blue-500 tracking-widest font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                JAVASCRPT,HTML5/CSS3,SCSS,SASS
               </div>
             </div>
           </li>
@@ -58,7 +59,7 @@ function Competences() {
                 <AiFillGithub size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 overflow-hidden font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 font-bold uppercase text-xl leading-none py-5 rounded-md text-center text-white">
                   Bootstrap,Tailwind,Mui,Semantic,Git
                 </div>
               </div>
@@ -68,11 +69,12 @@ function Competences() {
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
                 <FaReact size="30px" color="white" />
+                <SiNextdotjs size="30px" color="white" />
                 <FaNodeJs size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
-                  React,Node.JS
+                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                  React,Next.js,Node.JS
                 </div>
               </div>
             </div>
@@ -84,7 +86,7 @@ function Competences() {
                 <SiPostman size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
                   Docker,Postman,Express
                 </div>
               </div>
@@ -98,7 +100,7 @@ function Competences() {
                 <SiSublimetext size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
                   Visual studio code,Atom,Sublime Text
                 </div>
               </div>
@@ -112,7 +114,7 @@ function Competences() {
                 <SiSpeedtest size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
                   Agile, Scrum, Design Patterns,Revues de code, Tests unitaires
                 </div>
               </div>
@@ -126,7 +128,7 @@ function Competences() {
                 <FiTrello size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
                   Zenhub, Slack, Discord,Trello
                 </div>
               </div>
@@ -138,7 +140,7 @@ function Competences() {
                 <FiFigma size="30px" color="white" />
               </div>
               <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold text-md leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-500 uppercase font-bold text-xl  leading-none py-5 rounded-md text-center text-white">
                   Figma
                 </div>
               </div>
