@@ -4,12 +4,12 @@ import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
 import retrowild from '../assets/retroWild.png'
 import SpacePark from '../assets/SpacePark.png'
-import cv from '../documents/Belgoumri_kalil_cv.pdf'
+import cv from '../documents/KALIL_BELGOUMRI_CV.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import aboutImg from '../assets/about.png'
+import dag from '../assets/dag.png'
 import { motion } from 'framer-motion'
-
 
 const Home = () => {
   const bonjour =
@@ -25,16 +25,13 @@ const Home = () => {
         className="flex flex-col"
       >
         <Header />
-
-        {/* <Background image={image} /> */}
-
         {/* ** Contact ** */}
         <main className=" flex flex-col justify-center items-center bg-gradient-to-t from-gray-700 via-gray-900 to-black">
           <div className="contact mb-30">
             <Contact />
           </div>
           {/* ** CV ** */}
-          <div className="contact flex items-center justify-center text-white font-bold border-2 border-white px-16 py-3 rounded-sm cursor-pointer focus:text-blue-700 ">
+          <div className="contact flex items-center justify-center text-white font-bold border-2 border-white px-16 py-3 rounded-xl cursor-pointer focus:text-blue-700 ">
             <a href={cv}> Télécharger mon CV</a>
           </div>
           <div className="test"></div>
@@ -50,7 +47,7 @@ const Home = () => {
           >
             MES PROJETS
           </h1>
-          <div className="card__portofolio flex items-center justify-center flex-col px-14 sm:w-4/5 md:w-9/12 lg:w-10/12 pt-20 xl:w-2/3">
+          <div className="card__portofolio flex items-center justify-center flex-col md:inline-flex px-14 sm:w-4/5 md:w-full lg:w-10/12 pt-20 xl:w-2/3">
             <div className="retro__Wild flex items-center justify-center py-5">
               <h3 className="text-center text-red-600 text-3xl font-bold">
                 SpacePark
@@ -70,12 +67,13 @@ const Home = () => {
             <div className="portofolio flex pb-10">
               <Cardportofolio
                 image={retrowild}
-                site="https://space-park.netlify.app/"
+                site="https://retrowild.netlify.app/"
               />
             </div>
-              
+            <div className="portofolio flex pb-10">
+              <Cardportofolio image={dag} site="https://p3dag.duckdns.org/" />
             </div>
-     
+          </div>
 
           {/* ** AboutUs ** */}
           <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">
