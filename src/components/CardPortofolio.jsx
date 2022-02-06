@@ -42,7 +42,6 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo'
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 500,
     margin: 'auto',
     cursor: 'pointer',
   },
@@ -56,7 +55,7 @@ export const Cardportofolio = React.memo(function PostCard({
   heading,
   body,
   onClick,
-  p,
+  className,
 }) {
   const cardStyles = useStyles()
   const mediaStyles = useSlopeCardMediaStyles()
@@ -67,6 +66,7 @@ export const Cardportofolio = React.memo(function PostCard({
       <CardMedia classes={mediaStyles} image={image} />
       <CardContent className={cardStyles.content}>
         <TextInfoContent
+          className={className}
           classes={textCardContentStyles}
           heading={heading}
           body={body}
