@@ -2,13 +2,13 @@ import React from 'react'
 import Contact from '../components/Contact'
 import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
-import retrowild from '../assets/retroWild.png'
-import SpacePark from '../assets/SpacePark.png'
+import retrowild from '../assets/retroWild.webp'
+import SpacePark from '../assets/SpacePark.webp'
 import cv from '../documents/KALIL_BELGOUMRI_CV.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import aboutImg from '../assets/about.png'
-import dag from '../assets/dag.png'
+import aboutImg from '../assets/about.webp'
+import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
 
   console.log(bonjour)
   return (
-    <div className="home overflow-visible" id="Home">
+    <div className="home" id="Home">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -47,32 +47,61 @@ const Home = () => {
           >
             MES PROJETS
           </h1>
-          <div className="card__portofolio flex items-center justify-center flex-col md:inline-flex px-14 sm:w-4/5 md:w-full lg:w-10/12 pt-20 xl:w-2/3">
-            <div className="retro__Wild flex items-center justify-center py-5">
-              <h3 className="text-center text-red-600 text-3xl font-bold">
-                SpacePark
-              </h3>
-            </div>
-            <div className="portofolio flex space-x-4">
-              <Cardportofolio
-                image={SpacePark}
-                site="https://lyon-js-sept21-p2-g1-front.comicscrip.duckdns.org/"
-              />
-            </div>
-            <div className="retro__Wild flex items-center justify-center py-5">
-              <h3 className="mb-10 text-center text-red-600 text-3xl font-bold">
-                RetroWild
-              </h3>
-            </div>
-            <div className="portofolio flex pb-10">
-              <Cardportofolio
-                image={retrowild}
-                site="https://retrowild.netlify.app/"
-              />
-            </div>
-            <div className="portofolio flex pb-10">
-              <Cardportofolio image={dag} site="https://p3dag.duckdns.org/" />
-            </div>
+          <div className="flex px-10 my-10 flex-col gap-5 items-center justify-center xl:flex-row md:gap-5 ">
+            <Cardportofolio
+              heading="SpacePark"
+              body={
+                <span className="line-clamp-1 hover:line-clamp-none">
+                  Projet réaliser avec REACT, TAILWIND SEMANTIC et GOOGLE MAP.
+                  Site dédié au partage de place de parking. Link :
+                  https:/lyon-Js-Sept21-p2-g1-front.comicscrip.duckdns Org/
+                  GitHub :
+                  https://github.com/WildCodeSchool/lyon-js-sept21-p2-g1-front
+                </span>
+              }
+              image={SpacePark}
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href =
+                  'https://lyon-js-sept21-p2-g1-front.comicscrip.duckdns.org/'
+              }}
+            />
+
+            {/* RetroWild */}
+
+            <Cardportofolio
+              image={retrowild}
+              heading="RetroWild"
+              body={
+                <span className="line-clamp-1 hover:line-clamp-none">
+                  Projet réaliser avec HTML JAVASCRIPT et CSS. Site rétro
+                  gaming. Link : https://retrowild Netlify App GitHub :
+                  https://github.com/Yannis-Barba/retrowild
+                </span>
+              }
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = 'https://retrowild.netlify.app/'
+              }}
+            />
+
+            {/* DAG-SYS */}
+
+            <Cardportofolio
+              image={dag}
+              heading="DAG-SYS"
+              body={
+                <span className="line-clamp-1 hover:line-clamp-none">
+                  Projet réaliser avec REACT, NEXTJS, TAILWIND, MUI Leaflet Map.
+                  Link : https://p3dag.duckdns.org/ GitHub :
+                  https://github.com/WildCodeSchool/p3-dag-lyon-js-react-sept21
+                </span>
+              }
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = 'https://p3dag.duckdns.org/'
+              }}
+            />
           </div>
 
           {/* ** AboutUs ** */}
@@ -95,7 +124,7 @@ const Home = () => {
               </span>
             </div>
             <div className="background -mt-36 flex items-center justify-center lg:justify-end">
-              <img src={aboutImg} alt="AboutImg" />
+              <img src={aboutImg} width="500" height="500" alt="AboutImg" />
             </div>
           </div>
         </main>
