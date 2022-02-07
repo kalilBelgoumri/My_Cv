@@ -12,31 +12,6 @@ import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
 
 const Home = () => {
-  const datas = [
-    {
-      url: `${SpacePark}`,
-      body: `Projet réaliser avec REACT, TAILWIND SEMANTIC et GOOGLE MAP.
-    Site dédié au partage de place de parking. Link :
-    https:/lyon-Js-Sept21-p2-g1-front.comicscrip.duckdns Org/
-    GitHub :
-    https://github.com/WildCodeSchool/lyon-js-sept21-p2-g1-front`,
-      heading: `SpacePark`,
-    },
-    {
-      url: `${retrowild}`,
-      body: `Projet réaliser avec HTML JAVASCRIPT et CSS. Site rétro
-      gaming. Link : https://retrowild Netlify App GitHub :
-      https://github.com/Yannis-Barba/retrowild`,
-      heading: `retroWild`,
-    },
-    {
-      url: `${dag}`,
-      body: `Projet réaliser avec REACT, NEXTJS, TAILWIND, MUI Leaflet Map.
-      Link : https://p3dag.duckdns.org/ GitHub :
-      https://github.com/WildCodeSchool/p3-dag-lyon-js-react-sept21`,
-      heading: `DAG-SYS`,
-    },
-  ]
   const bonjour =
     'Bonjour les Amis Dev__00 mon site a été fait par moi même avec React Semantic et Tailwind merci de respecter mon travail :)'
 
@@ -72,25 +47,8 @@ const Home = () => {
           >
             MES PROJETS
           </h1>
-          <div className="flex w-full px-10 my-10 flex-col gap-5 items-center justify-center xl:flex-row md:gap-5 ">
-            {datas.map((data, id) => {
-              return (
-                <Cardportofolio
-                  className="line-clamp-1 hover:line-clamp-none"
-                  key={id}
-                  heading={data.heading}
-                  body={`${data.body}`}
-                  image={data.url}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    window.location.href =
-                      'https://lyon-js-sept21-p2-g1-front.comicscrip.duckdns.org/'
-                  }}
-                />
-              )
-            })}
-          </div>
-          {/* <div className="flex w-full px-10 my-10 flex-col gap-5 items-center justify-center xl:flex-row md:gap-5 ">
+
+          <div className="grid gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 ">
             <Cardportofolio
               heading="SpacePark"
               body={
@@ -110,7 +68,6 @@ const Home = () => {
               }}
             />
 
-
             <Cardportofolio
               image={retrowild}
               heading="RetroWild"
@@ -127,7 +84,6 @@ const Home = () => {
               }}
             />
 
-
             <Cardportofolio
               image={dag}
               heading="DAG-SYS"
@@ -143,7 +99,7 @@ const Home = () => {
                 window.location.href = 'https://p3dag.duckdns.org/'
               }}
             />
-          </div> */}
+          </div>
 
           {/* ** AboutUs ** */}
           <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">

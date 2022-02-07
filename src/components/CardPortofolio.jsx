@@ -42,6 +42,7 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo'
 
 const useStyles = makeStyles(() => ({
   root: {
+    width:"500",
     margin: 'auto',
     cursor: 'pointer',
   },
