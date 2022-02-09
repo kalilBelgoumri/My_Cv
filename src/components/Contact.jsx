@@ -33,7 +33,7 @@ function Contact() {
         transition={{ delay: 1.5 }}
         className="username__Dev flex mt-16 "
       >
-        <div className="userName  flex md:ml-4 mt-32 pb-30 items-center  lg:flex items-center justify-center">
+        <div className="userName  flex md:ml-4 mt-32 pb-30 items-center  lg:flex lg:items-center justify-center">
           <h5 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
             BELGOUMRI KALIL{' '}
           </h5>
