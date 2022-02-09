@@ -11,6 +11,7 @@ import aboutImg from '../assets/about.webp'
 import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
 
+
 const Home = () => {
   const bonjour =
     'Bonjour les Amis Dev__00 mon site a été fait par moi même avec React Semantic et Tailwind merci de respecter mon travail :)'
