@@ -1,31 +1,3 @@
-// import * as React from 'react'
-// import Card from '@mui/material/Card'
-// import CardContent from '@mui/material/CardContent'
-// import CardMedia from '@mui/material/CardMedia'
-// import Typography from '@mui/material/Typography'
-// import { CardActionArea } from '@mui/material'
-
-// export default function Cardportofolio({ image, typo,site,onClick }) {
-//   return (
-//     <Card onClick={onClick} className="cursor-pointer hover:transition-all"sx={{ maxWidth: 500, textAlign: 'center' }}>
-//       <CardActionArea>
-//         <CardMedia
-//           component="img"
-//           height="140"
-//           image={image}
-//           alt="green iguana"
-//         />
-//         <CardContent>
-
-//           <Typography gutterBottom variant="h5" component="div">
-//             {typo}
-//           </Typography>
-//         </CardContent>
-//       </CardActionArea>
-//     </Card>
-//   )
-// }
-/* eslint-disable max-len,no-script-url,jsx-a11y/anchor-is-valid */
 import React from 'react'
 import cx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles'
@@ -42,13 +14,9 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo'
 
 const useStyles = makeStyles(() => ({
   root: {
-    width:"500",
-    margin: 'auto',
-    cursor: 'pointer',
+    width: '300',
   },
-  content: {
-    padding: 24,
-  },
+  content: {},
 }))
 
 export const Cardportofolio = React.memo(function PostCard({
