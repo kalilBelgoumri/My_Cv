@@ -39,12 +39,12 @@ function Competences() {
           <span className="flex w-72 h-px bg-white sm:w-96"></span>
           <li>
             <div className="icon flex items-center justify-around mt-12">
-              <DiJavascript1 size="30px" color="white" />
-              <AiFillHtml5 size="30px" color="white" />
-              <DiCss3 size="30px" color="white" />
+              <DiJavascript1 size="50px" color="white" />
+              <AiFillHtml5 size="50px" color="white" />
+              <DiCss3 size="50px" color="white" />
             </div>
             <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-              <div className="bg-blue-500 tracking-widest font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+              <div className="bg-blue-900 border-2 border-white tracking-widest font-bold text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
                 JAVASCRPT,HTML5/CSS3,SCSS,SASS
               </div>
             </div>
@@ -52,15 +52,14 @@ function Competences() {
           <li>
             <div className=" w-screen pt-3">
               <div className="icon flex items-center justify-around px-14  my-2">
-                <FaBootstrap size="30px" color="white" />
-                <SiTailwindcss size="30px" color="white" />
-                <SiMaterialui size="30px" color="white" />
-                <SiSemanticuireact size="30px" color="white" />
-                <AiFillGithub size="30px" color="white" />
+                <FaBootstrap size="50px" color="white" />
+                <SiTailwindcss size="50px" color="white" />
+                <SiMaterialui size="50px" color="white" />
+                <SiSemanticuireact size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-900 border-2 border-white font-bold uppercase text-xl leading-none py-5 rounded-md text-center text-white">
-                  Bootstrap,Tailwind,Mui,Semantic,Git
+                <div className="bg-blue-900 border-2 border-white font-bold uppercase text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
+                  Bootstrap,Tailwind,Mui,Semantic
                 </div>
               </div>
             </div>
@@ -68,12 +67,12 @@ function Competences() {
           <li className="px-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <FaReact size="30px" color="white" />
-                <SiNextdotjs size="30px" color="white" />
-                <FaNodeJs size="30px" color="white" />
+                <FaReact size="50px" color="white" />
+                <SiNextdotjs size="50px" color="white" />
+                <FaNodeJs size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xlleading-none py-5 rounded-md text-center text-white">
                   React,Next.js,Node.JS
                 </div>
               </div>
@@ -82,11 +81,11 @@ function Competences() {
           <li className="px-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <FaDocker size="30px" color="white" />
-                <SiPostman size="30px" color="white" />
+                <FaDocker size="50px" color="white" />
+                <SiPostman size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
                   Docker,Postman,Express
                 </div>
               </div>
@@ -95,12 +94,12 @@ function Competences() {
           <li className="px-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <DiVisualstudio size="30px" color="white" />
-                <SiAtom size="30px" color="white" />
-                <SiSublimetext size="30px" color="white" />
+                <DiVisualstudio size="50px" color="white" />
+                <SiAtom size="50px" color="white" />
+                <SiSublimetext size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
                   Visual studio code,Atom,Sublime Text
                 </div>
               </div>
@@ -109,12 +108,12 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <DiScrum size="30px" color="white" />
-                <CgIfDesign size="30px" color="white" />
-                <SiSpeedtest size="30px" color="white" />
+                <DiScrum size="50px" color="white" />
+                <CgIfDesign size="50px" color="white" />
+                <SiSpeedtest size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
                   Agile, Scrum, Design Patterns,Revues de code, Tests unitaires
                 </div>
               </div>
@@ -123,13 +122,14 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-evenly my-2">
-                <BsSlack size="30px" color="white" />
-                <FaDiscord size="30px" color="white" />
-                <FiTrello size="30px" color="white" />
+                <BsSlack size="50px" color="white" />
+                <FaDiscord size="50px" color="white" />
+                <FiTrello size="50px" color="white" />
+                <AiFillGithub size="50px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl leading-none py-5 rounded-md text-center text-white">
-                  Zenhub, Slack, Discord,Trello
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xl leading-none py-5 rounded-md text-center text-white">
+                  Zenhub, Slack, Discord,Trello,Git
                 </div>
               </div>
             </div>
@@ -137,10 +137,10 @@ function Competences() {
           <li className="p-5">
             <div className=" w-full mt-2">
               <div className="icon flex items-center justify-around my-2">
-                <FiFigma size="30px" color="white" />
+                <FiFigma size="50px" color="white" />
               </div>
               <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 uppercase font-bold text-xl  leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white uppercase font-bold text-sm  md:text-lg lg:text-xl  leading-none py-5 rounded-md text-center text-white">
                   Figma
                 </div>
               </div>
