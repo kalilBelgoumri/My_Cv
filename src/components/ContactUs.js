@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Grid,
   TextField,
@@ -8,8 +7,32 @@ import {
   Typography,
 } from '@material-ui/core'
 import AccountBoxIcon from '@mui/icons-material/AccountBox'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
-function Contact() {
+function ContactUs() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_x0k5kcj',
+        'template_kgu1mjm',
+        form.current,
+        'user_4EdzRaXPPXDOn4bhXcJ4A'
+      )
+      .then(
+        (result) => {
+          alert('ok message bien envoyer')
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
+
   return (
     <div className="App px-10">
       <Typography gutterBottom variant="h3" align="center"></Typography>
@@ -25,13 +48,14 @@ function Contact() {
               component="p"
               gutterBottom
             ></Typography>{' '}
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <Grid container spacing={1}>
                 <Grid xs={12} sm={6} item>
                   <TextField
                     sx={<AccountBoxIcon />}
+                    name="user_name"
                     placeholder="Enter first name"
-                    label="First Name"
+                    label="Name"
                     variant="outlined"
                     fullWidth
                     required
@@ -40,7 +64,8 @@ function Contact() {
                 <Grid xs={12} sm={6} item>
                   <TextField
                     placeholder="Enter last name"
-                    label="Last Name"
+                    name="user_name"
+                    label="Name"
                     variant="outlined"
                     fullWidth
                     required
@@ -48,6 +73,7 @@ function Contact() {
                 </Grid>{' '}
                 <Grid item xs={12}>
                   <TextField
+                    name="user_email"
                     type="email"
                     placeholder="Enter email"
                     label="Email"
@@ -58,6 +84,7 @@ function Contact() {
                 </Grid>{' '}
                 <Grid item xs={12}>
                   <TextField
+                    name="phone"
                     type="number"
                     placeholder="Enter phone number"
                     label="Phone"
@@ -68,6 +95,7 @@ function Contact() {
                 </Grid>{' '}
                 <Grid item xs={12}>
                   <TextField
+                    name="message"
                     label="Message"
                     multiline
                     rows={4}
@@ -97,4 +125,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default ContactUs

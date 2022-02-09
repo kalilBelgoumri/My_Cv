@@ -28,20 +28,27 @@ function Contact() {
         </div>
       </div>
       <motion.div
-      initial={{y:'-200px'}}
-      animate={{y:0}}
-      transition={{delay:1.5}}
-      className="username__Dev flex mt-16 ">
+        initial={{ y: '-200px' }}
+        animate={{ y: 0 }}
+        transition={{ delay: 1.5 }}
+        className="username__Dev flex mt-16 "
+      >
         <div className="userName  flex md:ml-4 mt-32 pb-30 items-center  lg:flex items-center justify-center">
-          <h5 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl">BELGOUMRI KALIL </h5>
+          <h5 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+            BELGOUMRI KALIL{' '}
+          </h5>
           <span className="hidden md:flex w-36 h-1 bg-white ml-6"></span>
         </div>
       </motion.div>
       <motion.div
-      initial={{y:'-200px'}}
-      animate={{y:0}}
-      transition={{delay:1.5}}className="devlopper flex sm:ml-4 mt-28 mb-28 items-center lg:flex lg:items-center justify-center">
-        <h5 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-7xl">DEVELOPPER FULL STACK </h5>
+        initial={{ y: '-200px' }}
+        animate={{ y: 0 }}
+        transition={{ delay: 1.5 }}
+        className="devlopper flex sm:ml-4 mt-28 mb-28 items-center lg:flex lg:items-center justify-center"
+      >
+        <h5 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+          DEVELOPPER FULL STACK{' '}
+        </h5>
         <span className="hidden md:flex w-36 h-1 bg-white ml-6"></span>
       </motion.div>
       <div className="icon__social md:flex transform -rotate-90 items-center absolute mt-44 -mx-48 left-0">
@@ -69,7 +76,6 @@ function Contact() {
           />
         </div>
       </div>
- 
     </div>
   )
 }

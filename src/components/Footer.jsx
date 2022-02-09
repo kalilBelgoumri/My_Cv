@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button'
 import ContactMailIcon from '@mui/icons-material/ContactMail'
-import Contact from '../components/Contact'
+import ContactUs from '../components/ContactUs'
 function Footer() {
   return (
     <div>
@@ -19,7 +19,7 @@ function Footer() {
         {/* <div className="contact flex items-center justify-center text-white font-bold  border-4 border-white-500 px-20 py-4 ring-2 ring-offset-2 rounded-xl cursor-pointer">
           <a href="mailto:kalil.belgoumri@gmail.com">Contact</a>
         </div> */}
-        <Contact />
+        <ContactUs />
       </footer>
     </div>
   )
