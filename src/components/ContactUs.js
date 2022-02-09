@@ -35,6 +35,7 @@ function ContactUs() {
           )
         },
         (error) => {
+          MySwal()
           console.log(error.text)
         }
       )

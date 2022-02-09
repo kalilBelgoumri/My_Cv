@@ -4,7 +4,7 @@ import { Scrollchor, linear } from 'react-scrollchor'
 
 function NavLinks() {
   return (
-    <ul className=" text-white font-bold text-lg flex mr-10">
+    <ul className=" text-white font-bold text-xs md:text-lg flex mr-10">
       <li>
         <Scrollchor to="Home">Home</Scrollchor>
       </li>
