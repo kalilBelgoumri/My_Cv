@@ -59,7 +59,7 @@ function Competences() {
                 <AiFillGithub size="30px" color="white" />
               </div>
               <div className=" my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
-                <div className="bg-blue-500 font-bold uppercase text-xl leading-none py-5 rounded-md text-center text-white">
+                <div className="bg-blue-900 border-2 border-white font-bold uppercase text-xl leading-none py-5 rounded-md text-center text-white">
                   Bootstrap,Tailwind,Mui,Semantic,Git
                 </div>
               </div>
