@@ -47,7 +47,7 @@ function Contact() {
         className="devlopper flex sm:ml-4 mt-28 mb-28 items-center lg:flex lg:items-center justify-center"
       >
         <h5 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
-          DEVELOPPER FULL STACK{' '}
+          DEVELOPPER WEB FREELANCE
         </h5>
         <span className="hidden md:flex w-36 h-1 bg-white ml-6"></span>
       </motion.div>

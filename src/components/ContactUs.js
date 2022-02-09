@@ -44,7 +44,7 @@ function ContactUs() {
     <div className="App px-10">
       <Typography gutterBottom variant="h3" align="center"></Typography>
       <Grid>
-        <Card style={{ maxWidth: 1000, padding: '20px 5px', margin: '0 auto' }}>
+        <Card style={{ maxWidth: 700, padding: '20px 5px', margin: '0 auto' }}>
           <CardContent>
             <Typography gutterBottom variant="h5" className="text-center">
               Contact Us
@@ -68,7 +68,6 @@ function ContactUs() {
                     required
                   />
                 </Grid>{' '}
-    
                 <Grid item xs={12}>
                   <TextField
                     name="user_email"
