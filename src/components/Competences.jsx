@@ -147,10 +147,7 @@ function Competences() {
             </div>
           </li>
           <div className="ligne mt-10">
-            {/* <span className="flex w-72 h-px bg-white sm:w-96"></span> */}
             <Divider style={{ width: '200%', backgroundColor: 'white' }} />
-
-            {/* <Divider style={{ background: 'white' }} variant="middle" /> */}
           </div>
         </ul>
       </div>

@@ -41,7 +41,7 @@ function ContactUs() {
   }
 
   return (
-    <div className="App px-10">
+    <div className="App">
       <Typography gutterBottom variant="h3" align="center"></Typography>
       <Grid>
         <Card style={{ maxWidth: 700, padding: '20px 5px', margin: '0 auto' }}>
