@@ -27,12 +27,19 @@ function Header() {
       >
         {/* ** Navbar Burger Menu ** */}
         <div className="hamurgerOpen flex items-center justify-end absolute right-0 pr-6 cursor-pointer sm:hidden ">
-          <Hamburger color="white" rounded toggled={open} toggle={setOpen} />
+          <Hamburger
+            easing="ease-in"
+            color="white"
+            rounded
+            toggled={open}
+            toggle={setOpen}
+          />
         </div>
         <div className="logo__Nav absolute left-0 -mt-3 mx-6">
           <img className="h-1/2" src={img} alt="Logo" />
         </div>
-        <div className={`"hamburgerOpen hidden sm:flex items-center justify-end cursor-pointer"
+        <div
+          className={`"hamburgerOpen hidden sm:flex items-center justify-end cursor-pointer"
         ${show && 'hamburgerOpen'}`}
         >
           <Navigation />
