@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Contact from '../components/Contact'
 import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
@@ -10,8 +10,17 @@ import Footer from '../components/Footer'
 import aboutImg from '../assets/about.webp'
 import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  useEffect(() => {
+    AOS.refresh()
+    AOS.init({
+      duration: 1200,
+    })
+  }, [])
+
   const bonjour =
     'Bonjour les Amis Dev__00 mon site a été fait par moi même avec React Semantic et Tailwind merci de respecter mon travail :)'
 
@@ -48,7 +57,10 @@ const Home = () => {
             MES PROJETS
           </h1>
 
-          <div className="grid  gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 ">
+          <div
+            className="grid  gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 "
+            data-aos="zoom-in-down"
+          >
             <Cardportofolio
               heading="SpacePark"
               body={
@@ -102,7 +114,10 @@ const Home = () => {
           </div>
 
           {/* ** AboutUs ** */}
-          <div className="about mb-10 flex flex-col lg:grid grid-flow-col px-20">
+          <div
+            className="about mb-10 flex flex-col lg:grid grid-flow-col px-20"
+            data-aos="fade-up-left"
+          >
             <div className="font-semibold my-52 flex flex-col items-center lg:justify-center">
               <span
                 className="text-white flex text-2xl sm:text-3xl md:text-3xl lg:text-6xl"
@@ -126,6 +141,7 @@ const Home = () => {
           </div>
         </main>
         {/* ** Footer ** */}
+
         <Footer />
       </motion.div>
     </div>

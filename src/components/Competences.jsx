@@ -24,6 +24,7 @@ import { BsSlack } from 'react-icons/bs'
 import { FiTrello, FiFigma } from 'react-icons/fi'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
 export default function Competences() {
   useEffect(() => {
     AOS.refresh()
