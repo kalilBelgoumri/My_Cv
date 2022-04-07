@@ -6,7 +6,6 @@ import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
 import IconButton from '@material-ui/core/IconButton'
-import Share from '@material-ui/icons/Share'
 import { useSoftRiseShadowStyles } from '@mui-treasury/styles/shadow/softRise'
 import { useSlopeCardMediaStyles } from '@mui-treasury/styles/cardMedia/slope'
 import { useN01TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n01'
@@ -33,7 +32,7 @@ export const Cardportofolio = React.memo(function PostCard({
   return (
     <Card className={cx(cardStyles.root, shadowStyles.root)}>
       <CardMedia classes={mediaStyles} image={image} />
-      <CardContent className={cardStyles.content}>
+      <CardContent className={` cursor-pointer ${cardStyles.content}`}>
         <TextInfoContent
           className={className}
           classes={textCardContentStyles}
@@ -42,9 +41,7 @@ export const Cardportofolio = React.memo(function PostCard({
         />
       </CardContent>
       <Box px={2} pb={2} mt={-1}>
-        <IconButton onClick={onClick}>
-          <Share />
-        </IconButton>
+        <IconButton onClick={onClick}></IconButton>
       </Box>
     </Card>
   )

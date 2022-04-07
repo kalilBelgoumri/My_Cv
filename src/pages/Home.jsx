@@ -4,13 +4,12 @@ import Competences from '../components/Competences'
 import Cardportofolio from '../components/CardPortofolio'
 import retrowild from '../assets/retroWild.webp'
 import SpacePark from '../assets/SpacePark.webp'
-import cv from '../documents/KALIL_BELGOUMRI_CV.pdf'
+import cv from '../documents/KALIL_BELGOUMRI.pdf'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import aboutImg from '../assets/about.webp'
 import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
-
 
 const Home = () => {
   const bonjour =
@@ -49,7 +48,7 @@ const Home = () => {
             MES PROJETS
           </h1>
 
-          <div className="grid gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 ">
+          <div className="grid  gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 ">
             <Cardportofolio
               heading="SpacePark"
               body={
