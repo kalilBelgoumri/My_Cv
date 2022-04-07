@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Divider } from '@material-ui/core'
 import { DiJavascript1, DiCss3, DiVisualstudio, DiScrum } from 'react-icons/di'
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
@@ -22,8 +22,16 @@ import {
 import { CgIfDesign } from 'react-icons/cg'
 import { BsSlack } from 'react-icons/bs'
 import { FiTrello, FiFigma } from 'react-icons/fi'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+export default function Competences() {
+  useEffect(() => {
+    AOS.refresh()
+    AOS.init({
+      duration: 1200,
+    })
+  }, [])
 
-function Competences() {
   return (
     <>
       <div
@@ -34,11 +42,14 @@ function Competences() {
           COMPÉTENCES ET TECHNIQUES
         </h1>
       </div>
-      <div className=" text-white my-32 ">
+      <div className=" text-white my-32">
         <ul className="flex flex-col items-center justify-center">
           <span className="flex w-72 h-px bg-white sm:w-96"></span>
           <li>
-            <div className="icon flex items-center justify-around mt-12">
+            <div
+              className="icon flex items-center justify-around mt-12"
+              data-aos="fade-right"
+            >
               <DiJavascript1 size="50px" color="white" />
               <AiFillHtml5 size="50px" color="white" />
               <DiCss3 size="50px" color="white" />
@@ -51,7 +62,10 @@ function Competences() {
           </li>
           <li>
             <div className=" w-screen pt-3">
-              <div className="icon flex items-center justify-around px-14  my-2">
+              <div
+                className="icon flex items-center justify-around px-14  my-2"
+                data-aos="fade-left"
+              >
                 <FaBootstrap size="50px" color="white" />
                 <SiTailwindcss size="50px" color="white" />
                 <SiMaterialui size="50px" color="white" />
@@ -66,7 +80,10 @@ function Competences() {
           </li>
           <li className="px-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-around my-2">
+              <div
+                className="icon flex items-center justify-around my-2"
+                data-aos="fade-right"
+              >
                 <FaReact size="50px" color="white" />
                 <SiNextdotjs size="50px" color="white" />
                 <FaNodeJs size="50px" color="white" />
@@ -80,7 +97,10 @@ function Competences() {
           </li>
           <li className="px-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-around my-2">
+              <div
+                className="icon flex items-center justify-around my-2"
+                data-aos="fade-left"
+              >
                 <FaDocker size="50px" color="white" />
                 <SiPostman size="50px" color="white" />
               </div>
@@ -93,7 +113,10 @@ function Competences() {
           </li>
           <li className="px-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-around my-2">
+              <div
+                className="icon flex items-center justify-around my-2"
+                data-aos="fade-right"
+              >
                 <DiVisualstudio size="50px" color="white" />
                 <SiAtom size="50px" color="white" />
                 <SiSublimetext size="50px" color="white" />
@@ -107,7 +130,10 @@ function Competences() {
           </li>
           <li className="p-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-around my-2">
+              <div
+                className="icon flex items-center justify-around my-2"
+                data-aos="fade-left"
+              >
                 <DiScrum size="50px" color="white" />
                 <CgIfDesign size="50px" color="white" />
                 <SiSpeedtest size="50px" color="white" />
@@ -121,7 +147,10 @@ function Competences() {
           </li>
           <li className="p-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-evenly my-2">
+              <div
+                className="icon flex items-center justify-evenly my-2"
+                data-aos="fade-right"
+              >
                 <BsSlack size="50px" color="white" />
                 <FaDiscord size="50px" color="white" />
                 <FiTrello size="50px" color="white" />
@@ -136,7 +165,10 @@ function Competences() {
           </li>
           <li className="p-5">
             <div className=" w-full mt-2">
-              <div className="icon flex items-center justify-around my-2">
+              <div
+                className="icon flex items-center justify-around my-2"
+                data-aos="fade-left"
+              >
                 <FiFigma size="50px" color="white" />
               </div>
               <div className="my-5 w-screen px-8 md:px-12 lg:px-42 xl:px-32">
@@ -154,5 +186,3 @@ function Competences() {
     </>
   )
 }
-
-export default Competences
