@@ -1,4 +1,19 @@
-const projects = {
+import React from 'react'
+import SpacePark from '../assets/SpacePark.webp'
+import retroWild from '../assets/retroWild.webp'
+import dag from '../assets/dag.webp'
+
+type ProjectProps = {
+  image: string
+  url: string
+  body: JSX.Element
+}
+
+type ProjectsProps = {
+  [key: string]: ProjectProps
+}
+
+const projects: ProjectsProps = {
   SpacePark: {
     body: (
       <span className="line-clamp-1 hover:line-clamp-none">
@@ -8,7 +23,7 @@ const projects = {
         https://github.com/WildCodeSchool/lyon-js-sept21-p2-g1-front
       </span>
     ),
-    image: SpacePark,
+    image: SpacePark, // Assurez-vous que SpacePark est correctement importé ou fourni une URL d'image ici.
     url: 'https://lyon-js-sept21-p2-g1-front.comicscrip.duckdns.org/',
   },
   RetroWild: {
@@ -19,7 +34,7 @@ const projects = {
         https://github.com/Yannis-Barba/retrowild
       </span>
     ),
-    image: retrowild,
+    image: retroWild, // Assurez-vous que retrowild est correctement importé ou fourni une URL d'image ici.
     url: 'https://retrowild.netlify.app/',
   },
   DAGSYS: {
@@ -30,7 +45,9 @@ const projects = {
         https://github.com/WildCodeSchool/p3-dag-lyon-js-react-sept21
       </span>
     ),
-    image: dag,
+    image: dag, // Assurez-vous que dag est correctement importé ou fourni une URL d'image ici.
     url: 'https://p3dag.duckdns.org/',
   },
 }
+
+export default projects

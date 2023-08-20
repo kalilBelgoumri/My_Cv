@@ -16,11 +16,18 @@ type CardportofolioProps = {
 }
 const Cardportofolio = ({ image, heading, onClick }: CardportofolioProps) => {
   return (
-    <Card sx={{ width: 500, height: 500 }}>
-      <CardMedia style={{ height: 0, paddingTop: '56.25%' }} image={image} />
-      <CardContent>
+    <Card sx={{ width: 400, height: 400 }}>
+      <CardMedia
+        className="bg-top bg-cover"
+        style={{
+          height: 10,
+          paddingTop: '80%',
+        }}
+        image={image}
+      />
+      <CardContent className="text-center">
         <Typography
-          className="cursor-pointer"
+          className="cursor-pointer "
           gutterBottom
           variant="h5"
           component="div"

@@ -12,6 +12,7 @@ import dag from '../assets/dag.webp'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import projects from '../data/projects'
 
 const Home = () => {
   useEffect(() => {
@@ -61,56 +62,19 @@ const Home = () => {
             className="grid  gap-4 px-10 my-10 items-center justify-center lg:grid lg:grid-cols-3 "
             data-aos="zoom-in-down"
           >
-            <Cardportofolio
-              heading="SpacePark"
-              body={
-                <span className="line-clamp-1 hover:line-clamp-none">
-                  Projet réaliser avec REACT, TAILWIND SEMANTIC et GOOGLE MAP.
-                  Site dédié au partage de place de parking. Link :
-                  https:/lyon-Js-Sept21-p2-g1-front.comicscrip.duckdns Org/
-                  GitHub :
-                  https://github.com/WildCodeSchool/lyon-js-sept21-p2-g1-front
-                </span>
-              }
-              image={SpacePark}
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.href =
-                  'https://lyon-js-sept21-p2-g1-front.comicscrip.duckdns.org/'
-              }}
-            />
-
-            <Cardportofolio
-              image={retrowild}
-              heading="RetroWild"
-              body={
-                <span className="line-clamp-1 hover:line-clamp-none">
-                  Projet réaliser avec HTML JAVASCRIPT et CSS. Site rétro
-                  gaming. Link : https://retrowild Netlify App GitHub :
-                  https://github.com/Yannis-Barba/retrowild
-                </span>
-              }
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.href = 'https://retrowild.netlify.app/'
-              }}
-            />
-
-            <Cardportofolio
-              image={dag}
-              heading="DAG-SYS"
-              body={
-                <span className="line-clamp-1 hover:line-clamp-none">
-                  Projet réaliser avec REACT, NEXTJS, TAILWIND, MUI Leaflet Map.
-                  Link : https://p3dag.duckdns.org/ GitHub :
-                  https://github.com/WildCodeSchool/p3-dag-lyon-js-react-sept21
-                </span>
-              }
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.href = 'https://p3dag.duckdns.org/'
-              }}
-            />
+            {Object.entries(projects).map(([heading, projectData], index) => (
+              <div key={index} className="line-clamp-1 hover:line-clamp-none">
+                <Cardportofolio
+                  heading={heading}
+                  body={projectData.body}
+                  image={projectData.image}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    window.location.href = projectData.url
+                  }}
+                />
+              </div>
+            ))}
           </div>
 
           {/* ** AboutUs ** */}
